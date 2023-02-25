@@ -13,7 +13,7 @@ const Contents = () =>{
 
     const FetchData = async () =>{
         setLoading(true);
-        await axios.get(`${ItemRoute}/${route}`).then(resp=>{   
+        await axios.get(`${process.env.REACT_APP_URL}/api/v1/item/${route}`).then(resp=>{   
             if(resp.data.success){
                 setData(resp.data.result);
                 setLoading(false);
@@ -22,6 +22,7 @@ const Contents = () =>{
             }
         }).catch(err=>{
             console.log(err.message);
+            alert(err.message);
         })
     }
     useEffect(()=>{
