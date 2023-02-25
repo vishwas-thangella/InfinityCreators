@@ -50,7 +50,7 @@ const App = () =>{
         <Route path="/tv" element={<Contents/>}/>
         <Route path="/wall" element={<Contents/>}/>
         <Route path="/crockery" element={<Contents/>}/>
-        <Route path="/preview/:imgsrc" element={<ImagePreView/>}/>
+        <Route path="/preview" element={<ImagePreView/>}/>
         <Route path="/kitchen" element={<Contents/>}/>
         <Route path="*" element={<PageNotFound/>}/>
       </Routes>
