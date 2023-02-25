@@ -37,7 +37,8 @@ const Contents = () =>{
                     data.map(item=>{
                         return(
                             <Box key={item.img} onClick={()=>{
-                                navigation(`/preview/${item.img}`);
+                                navigation(`/preview`);
+                                sessionStorage.setItem('imgsrc',JSON.stringify(item.img));
                             }}><Avatar variant="square" src={item.img} sx={!isMobileView ? {width:"250px",height:"250px"} : {width:"150px",height:"150px"}}/></Box>
                         );
                     }) : <CircularProgress sx={{position:"absolute",top:"50%",left:"50%"}}/>

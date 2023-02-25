@@ -1,8 +1,7 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
 
 const ImagePreView = () =>{
-    const imgsrc = useParams();
+    const imgsrc = JSON.parse(sessionStorage.getItem('imgsrc'));
     return(
         <div className="row">
             <div className="col-12">
