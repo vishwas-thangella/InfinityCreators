@@ -11,6 +11,7 @@ import { auth } from "./database/firebase";
 import AdminHome from "./pages/AdminHome";
 import Construction from "./pages/Construction";
 import Contents from "./pages/Contents";
+import ImagePreView from "./pages/ImagePreview";
 
 const App = () =>{
   const dispatch = useDispatch();
@@ -49,6 +50,7 @@ const App = () =>{
         <Route path="/tv" element={<Contents/>}/>
         <Route path="/wall" element={<Contents/>}/>
         <Route path="/crockery" element={<Contents/>}/>
+        <Route path="/preview/:imgsrc" element={<ImagePreView/>}/>
         <Route path="/kitchen" element={<Contents/>}/>
         <Route path="*" element={<PageNotFound/>}/>
       </Routes>

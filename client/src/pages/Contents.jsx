@@ -4,13 +4,14 @@ import axios from 'axios';
 import { ItemRoute }  from '../API/URLS';
 import { Avatar, CircularProgress , Box } from '@mui/material';
 import { useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 
 const Contents = () =>{
     const route = window.location.pathname.split('/')[1];
     const isMobileView = useSelector(state=>state.MobileView);
     const [data,setData] = useState([]);
     const [loading,setLoading] = useState(true);
-
+    const navigation = useNavigate();
     const FetchData = async () =>{
         setLoading(true);
         await axios.get(`${process.env.REACT_APP_URL}/api/v1/item/${route}`).then(resp=>{   
@@ -35,7 +36,9 @@ const Contents = () =>{
                 {!loading ? 
                     data.map(item=>{
                         return(
-                            <Avatar variant="square" src={item.img} key={item.img} sx={!isMobileView ? {width:"250px",height:"250px"} : {width:"150px",height:"150px"}}/>
+                            <Box key={item.img} onClick={()=>{
+                                navigation(`/preview/${item.img}`);
+                            }}><Avatar variant="square" src={item.img} sx={!isMobileView ? {width:"250px",height:"250px"} : {width:"150px",height:"150px"}}/></Box>
                         );
                     }) : <CircularProgress sx={{position:"absolute",top:"50%",left:"50%"}}/>
                 }
