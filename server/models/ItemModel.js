@@ -1,0 +1,18 @@
+const mongoose = require('mongoose');
+
+const itemSchema = new mongoose.Schema({
+    img:{
+        type:String,
+        required:[true,'img url is required']
+    },
+    category:{
+        type:String,
+        required:[true,'category is required ']
+    },
+    ref:{
+        type:Object,
+        required:[true,'item ref is required !']
+    }
+});
+
+module.exports = mongoose.model('items',itemSchema);
