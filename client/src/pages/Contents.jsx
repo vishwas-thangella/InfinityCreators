@@ -22,6 +22,7 @@ const Contents = () =>{
             }
         }).catch(err=>{
             console.log(err.message);
+            alert(err.message);
         })
     }
     useEffect(()=>{
