@@ -61,7 +61,7 @@ const Homepage = () =>{
                             <div className={IsMobileView ? 'serItem-mb' : 'serItem'}>
                                 <img src="https://super.homelane.com/designGallery/kitchen-165709021533316c963ff2ea7_stage.png" width="100%" alt="wardrobe"/>
                                 <h6>Modular Kitchen</h6>
-                                <p>Design your Modular Kitchen from Livspace with easy EMI options starting from Rs3.3k/month. Affordable Modular Kitchens with 10 Yrs Warranty. Get your Livspace...</p>
+                                <p>Design your Modular Kitchen with Affordable Modular Kitchens with 1 Yr Warranty ...</p>
                             </div>
                             <div className={IsMobileView ? 'serItem-mb' : 'serItem'}>
                                 <img src="https://super.homelane.com/designGallery/bedroom-1657090215333fee0d8ac4e74_stage.png" alt="wardrobe" width="100%"/>
@@ -90,16 +90,16 @@ const Homepage = () =>{
                                         <img src={warrantyImg} width="40px" height="40px"/>
                                         <h6>Warranty</h6>
                                     </div>
-                                    <li className='mt-3'>FLAT 10Year Warranty Stay Worry-free with our warranty policy on modular products</li>
-                                    <li className='mt-3'>Upto 1 year on site service warranty <br/> Warranty on  on-site services such as painting electrical, plumbing & more..</li>
+                                    <li className='mt-3'>FLAT 1 Year Warranty Stay Worry-free with our warranty policy on modular products</li>
+                                    <li className='mt-3'>Upto 3 months on site service warranty <br/> Warranty on  on-site services such as painting electrical, plumbing & more..</li>
                                 </div>
                                 <div className="col-10 col-md-5 offRight">
                                     <div style={{display:'flex',alignItems:"center",gap:"10px"}}>
                                         <img src={PriceTagImg} width="40px" height="40px"/>
                                         <h6>Price Benifits</h6>
                                     </div>
-                                    <li className='mt-3'>Price-match guarantee3 - Price match to a valid quote in comparison with a branded player and for exact scope.</li>
-                                    <li className='mt-3'>Flexible payment options - EMI solutions and payment schemes from leading financial partners. </li>
+                                    <li className='mt-3'>Price-match guarantee - Price match to a valid quote in comparison with a branded player and for exact scope.</li>
+                                    <li className='mt-3'>Flexible payment options payment schemes from leading financial partners. </li>
                                     <li className='mt-3'>No hidden costs - Transparent costing without last-minute additions..</li>
                                 </div>
                             </div>
@@ -112,7 +112,7 @@ const Homepage = () =>{
                             <div style={{display:"flex",justifyContent:"center",flexDirection:"row",alignItems:"center",gap:"20px"}} className="pb-4">
                                 <div style={{display:"flex",alignItems:"center",gap:"10px"}}>
                                     <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="whatsapp" width="30px" height="30px" className='mt-4'/>
-                                    <h6 className='text-black mt-4'>+91 123466789</h6>
+                                    <h6 className='text-black mt-4'>+91 123456789</h6>
                                 </div>
                                 <div style={{display:"flex",alignItems:"center",gap:"10px"}}>
                                     <img src="https://workingwithdog.com/wp-content/uploads/2016/05/new_instagram_logo-1024x1024.jpg" alt="whatsapp" width="30px" height="30px" className='mt-4'/>
@@ -123,8 +123,8 @@ const Homepage = () =>{
                     </div>
                     <div className="row">
                         <div className="col-12 footer">
-                            <h5 style={{padding:"15px",color:"white"}}>© 2022 Infinity Creators All Rights Reserved.</h5>
-                            <p>For kitchen, wardrobes and storage | ³In comparison with a branded player and for exact scope | ⁴Booking amount is 5% of the final quote or Rs.25000, whichever is higher interior designers in Pune interior designer near me best interior designers in Pune interior designers in bangalore interior design bangalore interior designer near me best interior designers in mumbai interior designer near me interior designer mumbai interior design mumbai interior designers in hyderabad best interior designers in Hyderabad interior designer near me interior designer Hyderabad interior designers in chennai interiors in chennai interior decorators in chennai best interior designers in chennai interior designers in noida interior designer near me interior decorator near me best interior designers in noida best interior designers in kolkata interior company in Kolkata home interiors Kolkata best interior designers in Kolkata interior designers in gurgaon interior designer near me home interior design interior design near me</p>
+                            <h5 style={{padding:"15px",color:"white",textAlign:'center',fontSize:"16px"}}>© 2022 Infinity Creators All Rights Reserved.</h5>
+                            <p>For kitchen, wardrobes and storage | ³In comparison with a branded player and for exact scope | ⁴Booking amount is 5% of the final quote or 25%, whichever is higher interior designers in Pune , Pune interior designers in bangalore best interior designers in mumbai interior designers in hyderabad best interior designers in Hyderabad interior designers in chennai interior decorators in chennai best interior designers in chennai best interior designers in kolkata.. </p>
                         </div>
                     </div>
             </div>
