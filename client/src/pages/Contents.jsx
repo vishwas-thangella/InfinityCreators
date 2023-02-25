@@ -13,7 +13,7 @@ const Contents = () =>{
 
     const FetchData = async () =>{
         setLoading(true);
-        await axios.get(`${ItemRoute}/${route}`).then(resp=>{   
+        await axios.get(`${process.env.REACT_APP_URL}/${route}`).then(resp=>{   
             if(resp.data.success){
                 setData(resp.data.result);
                 setLoading(false);
