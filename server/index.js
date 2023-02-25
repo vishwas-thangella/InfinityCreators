@@ -7,7 +7,9 @@ const cors = require('cors');
 const app = express();
 ConnectToDB();
 
-app.use(cors());
+app.use(cors({
+    origin:"https://infinity-creators-client.vercel.app"
+}));
 app.use(express.json());
 app.use('/api/v1/item',itemRoute);
 
