@@ -112,7 +112,7 @@ const Homepage = () =>{
                             <div style={{display:"flex",justifyContent:"center",flexDirection:"row",alignItems:"center",gap:"20px"}} className="pb-4">
                                 <div style={{display:"flex",alignItems:"center",gap:"10px"}}>
                                     <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="whatsapp" width="30px" height="30px" className='mt-4'/>
-                                    <h6 className='text-black mt-4'>+91 123456789</h6>
+                                    <h6 className='text-black mt-4'>+91 8688243967 , 8499963031</h6>
                                 </div>
                                 <div style={{display:"flex",alignItems:"center",gap:"10px"}}>
                                     <img src="https://workingwithdog.com/wp-content/uploads/2016/05/new_instagram_logo-1024x1024.jpg" alt="whatsapp" width="30px" height="30px" className='mt-4'/>
